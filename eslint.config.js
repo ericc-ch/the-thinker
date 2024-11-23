@@ -2,6 +2,7 @@ import globals from "globals";
 import javascript from "@eslint/js";
 import typescript from "typescript-eslint";
 import react from "eslint-plugin-react";
+import prettier from "eslint-plugin-prettier/recommended";
 
 export default typescript.config(
   {
@@ -12,6 +13,7 @@ export default typescript.config(
     extends: [
       javascript.configs.recommended,
       typescript.configs.stylisticTypeChecked,
+      prettier,
     ],
     languageOptions: {
       parserOptions: {
