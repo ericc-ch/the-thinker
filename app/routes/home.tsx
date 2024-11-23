@@ -1,13 +1,14 @@
+import { Button } from "@mantine/core";
+
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+
+export default function Home() {
+  return <Button>Wow</Button>;
+}
 
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { content: "Welcome to React Router!", name: "description" },
   ];
-}
-
-export default function Home() {
-  return <Welcome />;
 }
